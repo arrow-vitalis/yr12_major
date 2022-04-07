@@ -113,12 +113,16 @@ $("#completeOrder").click(function () {
     console.log("the drink temperature is: " + document.getElementById("tempLevel").value)
     if(document.getElementById("decaf").checked){
         console.log("is there decaf? " + document.getElementById("decaf").value)
-    } if(document.getElementById("noDecaf").checked){
+    } 
+    if(document.getElementById("noDecaf").checked){
         console.log("is there decaf? " + document.getElementById("noDecaf").value)
-    }
-    
+    };
     console.log("the amount of sugars is: " + document.getElementById("sugars").value)
-    console.log("the payment type is: " + document.getElementById("paymentPaperMoney").value)
-    console.log("the payment type is: " + document.getElementById("paymentOnlineMoney").value)
+    cif(document.getElementById("paymentPaperMoney").checked){
+        console.log("payment type: " + document.getElementById("paymentPaperMoney").value)
+    } 
+    if(document.getElementById("paymentOnlineMoney").checked){
+        console.log("payment type: " + document.getElementById("paymentOnlineMoney").value)
+    }
 })
 
