@@ -1,3 +1,5 @@
+//all of my arrays
+
 var arrCoffeeTypes = ["espresso", "long black", "flat white", "latte", "cappuccino", "mocha", "chai latte", "dirty chai", "hot chocolate", "babycino"];
 
 var arrMilkTypes = ["full-fat", "skim", "soy", "almond", "oat"];
@@ -5,6 +7,8 @@ var arrMilkTypes = ["full-fat", "skim", "soy", "almond", "oat"];
 var arrSize = ["small", "medium", "large"];
 
 var arrTempLevel = ["iced", "warm", "normal", "extra hot", "super-duper hot"];
+
+//calling arrays to display in drop-down menus
 
 function loadCoffeeTypes() {
     for (var i = 0; i < arrCoffeeTypes.length; i++) {
@@ -41,6 +45,9 @@ function loadTempLevel() {
 }
 
 loadTempLevel();
+
+//all the stuff for the navigation bar code and switching pages
+
 
 $("#homePage").show();
 $("#viewMenu").hide();
@@ -100,12 +107,12 @@ When button(completeOrder) = clicked:
 $("#completeOrder").click(function () {
     console.log("the customer name is: " + document.getElementById("customerName").value)
     console.log("the customer phone number is: " + document.getElementById("customerPhone").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
-    console.log("the customer name is: " + document.getElementById("customerName").value)
+    console.log("the coffee type is: " + document.getElementById("coffeeType").value)
+    console.log("the milk type is: " + document.getElementById("milkType").value)
+    console.log("the drink size is: " + document.getElementById("size").value)
+    console.log("the drink temperature is: " + document.getElementById("tempLevel").value)
+    console.log("Is the drink decaf: " + document.getElementsByName("decaf").value)
+    console.log("the amount of sugars is: " + document.getElementById("sugars").value)
+    console.log("the payment type is: " + document.getElementByName("payment").value)
 })
 
