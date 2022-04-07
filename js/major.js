@@ -111,8 +111,12 @@ $("#completeOrder").click(function () {
     console.log("the milk type is: " + document.getElementById("milkType").value)
     console.log("the drink size is: " + document.getElementById("size").value)
     console.log("the drink temperature is: " + document.getElementById("tempLevel").value)
-    console.log("Is the drink decaf: " + document.getElementById("decaf").value)
-    console.log("Is the drink decaf: " + document.getElementById("noDecaf").value)
+    if(document.getElementById("decaf").checked){
+        console.log("is there decaf? " + document.getElementById("decaf").value)
+    } if(document.getElementById("noDecaf").checked){
+        console.log("is there decaf? " + document.getElementById("noDecaf").value)
+    }
+    
     console.log("the amount of sugars is: " + document.getElementById("sugars").value)
     console.log("the payment type is: " + document.getElementById("paymentPaperMoney").value)
     console.log("the payment type is: " + document.getElementById("paymentOnlineMoney").value)
