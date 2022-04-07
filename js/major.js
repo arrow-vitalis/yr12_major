@@ -118,7 +118,7 @@ $("#completeOrder").click(function () {
         console.log("is there decaf? " + document.getElementById("noDecaf").value)
     };
     console.log("the amount of sugars is: " + document.getElementById("sugars").value)
-    cif(document.getElementById("paymentPaperMoney").checked){
+    if(document.getElementById("paymentPaperMoney").checked){
         console.log("payment type: " + document.getElementById("paymentPaperMoney").value)
     } 
     if(document.getElementById("paymentOnlineMoney").checked){
